@@ -1,0 +1,47 @@
+.contact {
+    width: 100vw;
+    background-color: gray;
+    color: white;
+    padding: 1rem 0;
+}
+
+.contact-container {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+        span {
+            font-weight: 600;
+        }
+    }
+
+    .fyi {
+        background-color: black;
+        color: white;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        font-family: wolf;
+        font-size: 1.5rem;
+        border: none;
+    }
+
+    input[type="submit"] {
+        background-color: lightgray;
+    }
+}

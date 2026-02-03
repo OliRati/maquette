@@ -22,7 +22,43 @@
 		</div>
 	</div>
 
-    {% include 'menu/index.html.twig' %}
-    {% include 'contact/index.html.twig' %}
+	{% include 'menu/index.html.twig' %}
+
+	<div class="about">
+		<h2>ABOUT</h2>
+		<p>THE PIZZA RESTAURENT WAS FOUNDED IN BLABLA BY MR. ITALIANO IN LOREM IPSUM DOLOR SIT AMET, CONSECTETURE ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENTAM, QUIS NOSTRUD EXERCITATION ULLAMCO LABORIS NIST UT ALIQUIP EX EA COMMODO CONSEQUAT.</p>
+		<div class="about-chef">
+			<div>
+				<p>THE CHEF? MR ITALIANO HIMSELF</p>
+				<p>WE ARE PROUT OF OUR INTERIORS.</p>
+			</div>
+			<div>
+				<img src="{{ asset('assets/img/chef.jpg') }}" alt="">
+			</div>
+		</div>
+		<div><img src="{{ asset('assets/img/onepage_restaurant.jpg') }}" alt=""></div>
+	</div>
+	<div class="about">
+		<div class="about-container">
+			<h3>OPENING HOURS</h3>
+			<div class="about-hours">
+				<div>
+					<p>MON & TIE CLOSED</p>
+					<p>WEDNESDAY 10.00 - 24.00</p>
+					<p>THURSDAY 10:00 - 24:00</p>
+				</div>
+				<div>
+					<p>FRIDAY 10:00 - 12:00</p>
+					<p>SATURDAY 10:00 - 23:00</p>
+					<p>SUNDAY CLOSED</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div>
+    <img src="{{ asset('assets/img/map.jpg') }}" alt=""></div>
+
+	{% include 'contact/index.html.twig' %}
 	{% include 'partials/_footer.html.twig' %}
 {% endblock %}
