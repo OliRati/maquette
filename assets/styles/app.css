@@ -1,3 +1,108 @@
+/*
+ * Simple CSS reset
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+/*
+ * Global settings
+ */
+
+@font-face {
+    font-family: wolf;
+    src: url("../font/amaticsc.woff2") format('woff2');
+}
+
 body {
     background-color: skyblue;
+    font-family: wolf;
 }
+
+header {
+    background-color: #333;
+    width: 100vw;
+}
+
+.menubar {
+    background-color: #333;
+    color: white;
+    font-size: 2rem;
+    width: 1280px;
+    margin: 0 auto;
+    padding: 1rem auto;
+
+    ul {
+        display: flex;
+        gap : 2rem;
+
+        li {
+            padding: 1rem;
+            list-style-type: none;
+        };
+    }
+}
+
+
+/*
+ * Hero CSS
+ */
+
+ .hero {
+    position: relative;
+    width: 100vw;
+
+    div:first-child {
+        width: 100%;
+    }
+
+    div:nth-child(2) {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+
+        h1 {
+            text-align: center;
+            font-size: 6rem;
+            letter-spacing: 0.3rem;
+
+            span {
+                display: block;
+            }
+
+            line-height: 8rem;
+        }
+        p {
+            background-color: black;
+            font-size: 2rem;
+            width: fit-content;
+            padding: 1rem;
+            margin-top: 5rem;
+        }
+    }
+
+    div:last-child {
+            position: absolute;
+            left: 3rem;
+            bottom: 2rem;
+            background-color: black;
+            color: white;
+            font-size: 2rem;
+            width: fit-content;
+            padding: 0.5rem 1rem;
+            margin-top: 5rem;
+    }
+ }
+

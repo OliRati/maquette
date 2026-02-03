@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+
+	{% include 'partials/_header.html.twig' %}
+
+	<div class="hero">
+		<div>
+			<img src="{{ asset('assets/img/pizza.jpg') }}" alt="">
+		</div>
+		<div>
+			<h1>THIN
+				<span>CRUST PIZZA</span>
+			</h1>
+			<p>LET ME SEE THE MENU</p>
+		</div>
+		<div>
+			<p>OPEN FROM 10AM TO 12PM</p>
+		</div>
+	</div>
+	{% include 'partials/_footer.html.twig' %}
+{% endblock %}
