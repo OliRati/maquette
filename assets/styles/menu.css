@@ -1,0 +1,77 @@
+.menu {
+    background-color: black;
+    padding-bottom: 2rem;
+    width: 100vw;
+
+    h2 {
+        width:fit-content;
+        color: white;
+        font-size: 3rem;
+        padding: 2rem 0;
+        margin: 0 auto;
+    }
+
+    .menu-container {
+        width: 80%;
+        margin: 0 auto;
+        background-color: antiquewhite;
+    }
+
+    .menu-sections {
+        display: flex;
+        border: 0.1rem solid gray;
+        font-size: 2rem;
+
+        div {
+            width: 33.33%;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        div {
+            background-color: black;
+            color: white;
+        }
+
+        div:first-child {
+            background-color: lightcoral;
+            color: white;
+        }
+    }
+
+    .menu-details {
+        display: flex;
+        justify-content: space-between;
+        font-size: 2rem;
+        margin: 2rem 0;
+        padding: 1rem;
+
+        div>div {
+            font-weight: 600;
+        }
+
+        div>div:last-child {
+            margin-top: 2rem;
+            color: gray;
+        }
+
+        >div:last-child {
+            background-color: gray;
+            color: white;
+            padding: 0.5rem;
+            height: fit-content;
+        }
+
+        .hot {
+            background-color: lightcoral;
+            color: white;
+            padding: 0.5rem;
+        }
+
+        .new {
+            background-color: gray;
+            padding: 0.5rem;
+        }
+    }
+
+}
