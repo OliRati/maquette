@@ -7,22 +7,19 @@
 		<p>
 			<span>RESERVE</span>
 			A TABLE, ASK FOR TODAY'S SPECIAL OR JUST SEND US A MESSAGE:</p>
-		<form action="" method="post">
-			<div>
-				<input type="text" placeholder="NAME" name="name">
-			</div>
-			<div>
-				<input type="number" placeholder="HOW MANY PEOPLE" name="quantity">
-			</div>
-			<div>
-				<input type="datetime-local" name="datetime">
-			</div>
-			<div>
-				<input type="text" name="message" placeholder="MESSAGE \ SPECIAL REQUIREMENTS">
-			</div>
-			<div>
-				<input type="submit" value="SEND MESSAGE" name="send">
-			</div>
-		</form>
+
+		{{ form_start(form) }}
+
+		{{ form_row(form.name, { label: false, attr: { placeholder: 'NAME' } } ) }}
+		{{ form_row(form.quantity, { label: false, attr: { placeholder: 'HOW MANY PEOPLE' } } ) }}
+		{{ form_row(form.datetime, { label:false }) }}
+		{{ form_row(form.message, { label: false, attr: { placeholder: 'MESSAGE \ SPECIAL REQUIREMENTS' } } ) }}
+
+		{# {{ form_row(form) }} #}
+
+		<input type="submit" value="SEND MESSAGE">
+
+		{{ form_end(form) }}
+
 	</div>
 </div>

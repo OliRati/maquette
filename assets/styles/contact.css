@@ -44,4 +44,12 @@
     input[type="submit"] {
         background-color: lightgray;
     }
+    textarea {
+        width: 100%;
+        padding: 0.5rem;
+        margin: 0.5rem 0;
+        font-family: wolf;
+        font-size: 1.5rem;
+        border: none;
+    }
 }
